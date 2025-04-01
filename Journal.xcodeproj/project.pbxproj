@@ -6,13 +6,18 @@
     objectVersion = 56;
     objects = {
         /* Begin PBXBuildFile section */
-        13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+        13B07FBC1A68108700A75B9A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.swift */; };
+        13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
         /* End PBXBuildFile section */
-        
+
         /* Begin PBXFileReference section */
         13B07F961A680F5B00A75B9A /* Journal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Journal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+        13B07FB01A68108700A75B9A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Journal/AppDelegate.swift; sourceTree = "<group>"; };
+        13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = Journal/Images.xcassets; sourceTree = "<group>"; };
+        13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Journal/Info.plist; sourceTree = "<group>"; };
+        13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Journal/main.m; sourceTree = "<group>"; };
         /* End PBXFileReference section */
-        
+
         /* Begin PBXFrameworksBuildPhase section */
         13B07F8C1A680F5B00A75B9A /* Frameworks */ = {
             isa = PBXFrameworksBuildPhase;
@@ -22,20 +27,56 @@
             runOnlyForDeploymentPostprocessing = 0;
         };
         /* End PBXFrameworksBuildPhase section */
-        
+
         /* Begin PBXGroup section */
         83CBB9F61A601CBA00E9B192 = {
             isa = PBXGroup;
             children = (
-                13B07FB71A68108700A75B9A /* main.m */,
+                13B07FAE1A68108700A75B9A /* Journal */,
+                832341AE1AAA6A7D00B99B32 /* Libraries */,
+                83CBBA001A601CBA00E9B192 /* Products */,
+                2D16E6871FA4F8E400B85C8A /* Frameworks */,
             );
             indentWidth = 2;
             sourceTree = "<group>";
             tabWidth = 2;
             usesTabs = 0;
         };
+        13B07FAE1A68108700A75B9A /* Journal */ = {
+            isa = PBXGroup;
+            children = (
+                13B07FB01A68108700A75B9A /* AppDelegate.swift */,
+                13B07FB51A68108700A75B9A /* Images.xcassets */,
+                13B07FB61A68108700A75B9A /* Info.plist */,
+                13B07FB71A68108700A75B9A /* main.m */,
+            );
+            name = Journal;
+            sourceTree = "<group>";
+        };
+        832341AE1AAA6A7D00B99B32 /* Libraries */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = Libraries;
+            sourceTree = "<group>";
+        };
+        83CBBA001A601CBA00E9B192 /* Products */ = {
+            isa = PBXGroup;
+            children = (
+                13B07F961A680F5B00A75B9A /* Journal.app */,
+            );
+            name = Products;
+            sourceTree = "<group>";
+        };
+        2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
+            isa = PBXGroup;
+            children = (
+            );
+            name = Frameworks;
+            sourceTree = "<group>";
+        };
         /* End PBXGroup section */
-        
+
         /* Begin PBXNativeTarget section */
         13B07F861A680F5B00A75B9A /* Journal */ = {
             isa = PBXNativeTarget;
@@ -55,21 +96,20 @@
             productType = "com.apple.product-type.application";
         };
         /* End PBXNativeTarget section */
-        
+
         /* Begin PBXProject section */
         83CBB9F71A601CBA00E9B192 /* Project object */ = {
             isa = PBXProject;
             attributes = {
-                LastUpgradeCheck = 1500;
-                ORGANIZATIONNAME = "";
+                LastUpgradeCheck = 1210;
                 TargetAttributes = {
                     13B07F861A680F5B00A75B9A = {
-                        LastSwiftMigration = 1500;
+                        LastSwiftMigration = 1120;
                     };
                 };
             };
             buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "Journal" */;
-            compatibilityVersion = "Xcode 14.0";
+            compatibilityVersion = "Xcode 12.0";
             developmentRegion = en;
             hasScannedForEncodings = 0;
             knownRegions = (
@@ -85,7 +125,30 @@
             );
         };
         /* End PBXProject section */
-        
+
+        /* Begin PBXResourcesBuildPhase section */
+        13B07F8E1A680F5B00A75B9A /* Resources */ = {
+            isa = PBXResourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        /* End PBXResourcesBuildPhase section */
+
+        /* Begin PBXSourcesBuildPhase section */
+        13B07F871A680F5B00A75B9A /* Sources */ = {
+            isa = PBXSourcesBuildPhase;
+            buildActionMask = 2147483647;
+            files = (
+                13B07FBC1A68108700A75B9A /* AppDelegate.swift in Sources */,
+                13B07FC11A68108700A75B9A /* main.m in Sources */,
+            );
+            runOnlyForDeploymentPostprocessing = 0;
+        };
+        /* End PBXSourcesBuildPhase section */
+
         /* Begin XCBuildConfiguration section */
         13B07F941A680F5B00A75B9A /* Debug */ = {
             isa = XCBuildConfiguration;
@@ -168,7 +231,7 @@
                 COPY_PHASE_STRIP = NO;
                 ENABLE_STRICT_OBJC_MSGSEND = YES;
                 ENABLE_TESTABILITY = YES;
-                "EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+                "EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
                 GCC_C_LANGUAGE_STANDARD = gnu99;
                 GCC_DYNAMIC_NO_PIC = NO;
                 GCC_NO_COMMON_BLOCKS = YES;
@@ -196,14 +259,6 @@
                 );
                 MTL_ENABLE_DEBUG_INFO = YES;
                 ONLY_ACTIVE_ARCH = YES;
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_CPLUSPLUSFLAGS = (
-                    "$(OTHER_CFLAGS)",
-                    "-DFOLLY_NO_CONFIG",
-                    "-DFOLLY_MOBILE=1",
-                    "-DFOLLY_USE_LIBCPP=1",
-                );
-                REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
                 SDKROOT = iphoneos;
             };
             name = Debug;
@@ -241,7 +296,7 @@
                 COPY_PHASE_STRIP = YES;
                 ENABLE_NS_ASSERTIONS = NO;
                 ENABLE_STRICT_OBJC_MSGSEND = YES;
-                "EXCLUDED_ARCHS[sdk=iphonesimulator*]" = i386;
+                "EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "";
                 GCC_C_LANGUAGE_STANDARD = gnu99;
                 GCC_NO_COMMON_BLOCKS = YES;
                 GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -261,21 +316,13 @@
                     "\"$(inherited)\"",
                 );
                 MTL_ENABLE_DEBUG_INFO = NO;
-                OTHER_CFLAGS = "$(inherited)";
-                OTHER_CPLUSPLUSFLAGS = (
-                    "$(OTHER_CFLAGS)",
-                    "-DFOLLY_NO_CONFIG",
-                    "-DFOLLY_MOBILE=1",
-                    "-DFOLLY_USE_LIBCPP=1",
-                );
-                REACT_NATIVE_PATH = "${PODS_ROOT}/../../node_modules/react-native";
                 SDKROOT = iphoneos;
                 VALIDATE_PRODUCT = YES;
             };
             name = Release;
         };
         /* End XCBuildConfiguration section */
-        
+
         /* Begin XCConfigurationList section */
         13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "Journal" */ = {
             isa = XCConfigurationList;
